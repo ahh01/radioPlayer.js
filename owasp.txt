@@ -1,0 +1,21 @@
+1. What is OWASP and what is its primary mission as described in the article?
+(SVAR): OWASP är en organisation som fokuserar på web applikationers säkherhet.
+Deras främsta fokus är att leverera fritt tillgängligt material i deras wepplats, vilket hjälper personer att förbättra sina webbaplikationer.
+
+2. Explain the concept of "Injection". Provide an example of how an injection attack could compromise a web application's security.
+(SVAR): Injektionsattacker inträffar när osäker data skickas till en kodtolkare genom en formulärinmatning eller annan datainlämning till en webbapplikation.
+En angripare kan till exempel då mata in SQL-databaskod i ett formulär som väntar in ett användarnamn i klartext. Om denna formulärinmatning saknar lämpliga säkerhetsåtgärder kan SQL-koden köras, vilket leder till en SQL-injektionsattack.
+
+3. Explain two strategies to prevent Broken Authentication vulnerabilities.
+(SVAR): För att minska riskerna med autentiseringssårbarheter är det bra att vidta vissa åtgärder. Till exempel att använda sig av tvåfaktorsautentisering (2FA), som lägger till ett extra lager av säkerhet genom att kräva att användarna ger två former av identifiering. 
+Dessutom är det gynnsamt att implementera hastighetsbegränsning, vilket innebär att begränsa eller fördröja upprepade inloggningsförsök. Detta hjälper till att förhindra obehörig åtkomst genom att begränsa antalet inloggningsförsök inom en viss tidsram.
+
+4. Describe the potential consequences of Insecure Deserialization in web applications. How can developers protect against such attacks?
+(SVAR): Konsekvenserna av Insecure Deserialization är att det kan leda till till exempel DDoS-attacker och fjärrkörning av kod. 
+Man kan åtgärda med hjälp av övervakning av deserialiseringsoperationer och implementering av typkontroller för att identifiera angripare, 
+men det mest effektiva är att inaktivera serialisering av data från opålitliga källor.
+
+5. Briefly define Cross-Site Scripting (XSS) as outlined in the article and list two methods suggested in the article to prevent XSS attacks in web applications.
+(SVAR): Cross-Site Scripting är en typ av attack där en person (angripare) lägger in en skadlig kod på en hemsida som körs när någon går in i sidan.
+Det som händer är att obehöriga handlingar eller data stjäls. Den skadliga koden kan infogas på olika sätt, som att lägga till den i en URL eller lägga upp den i användargenererat innehåll. 
+På tekniskt språk kategoriseras cross-site scripting som en kodinjektionsattack på klientsidan.
